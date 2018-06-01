@@ -7,3 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 }
+
+
+/*
+To create a component automatically, run this
+ ng g c <component_name>
+
+By default this will create the component in the ./src/app directory 
+*/
