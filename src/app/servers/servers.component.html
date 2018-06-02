@@ -25,9 +25,19 @@ class="form-control"
     (click)="onCreateServer()"> <!-- Event binding example -->
     Add Server
 </button>
-<p>{{ serverCreationStatus }}</p>
+<button
+*ngIf="serverCreated"
+    class="btn btn-primary"
+    (click)="deleteServer()"> <!-- Event binding example -->
+    Delete Server
+</button>
+<!-- <p>{{ serverCreationStatus }}</p> -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 
+<!-- noServer is an ngTemplate embedded in the html -->
+<p *ngIf="serverCreated; else noServer"> Server was created. Name is {{ serverName }}</p>
+<ng-template #noServer>
+    <p>No Server was created.}</p>
+</ng-template>
  
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let server of servers"></app-server> <!-- *ngFor and *ngIf are example of structural directives ->>

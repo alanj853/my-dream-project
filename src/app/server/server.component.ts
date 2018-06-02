@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
     selector: 'app-server',
     templateUrl: './server.component.html',
     styles: [`
-    p {
-        color: darkBlue;
+    .online {
+        h3 {
+        color: white;
+        }
+    }
+    .offline {
+        h3 {
+        color: orange;
+        }
     }
     `]
 }) 
@@ -17,7 +24,15 @@ export class ServerComponent {
     serverId: number = 10; // no need to add type for number, it gets it anyways
     serverStatus: string = 'offline';
 
+    constructor() {
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline'
+    }
+    
     getServerStatus() {
         return this.serverStatus;
+    }
+
+    getColor() {
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 }
