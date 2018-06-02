@@ -3,25 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { AlanComponent } from './alan/alan.component';
-import { AsusComponent } from './asus/asus.component';
-import { UsersComponent } from './users/users.component';
-import { DetailsComponent } from './details/details.component';
 
 
 
 @NgModule({
   // we register new components in the declarations property
   declarations: [
-    AppComponent,
-    ServerComponent,
-    ServersComponent,
-    AlanComponent,
-    AsusComponent,
-    UsersComponent,
-    DetailsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
