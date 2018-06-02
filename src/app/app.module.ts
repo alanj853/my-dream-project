@@ -7,6 +7,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { AlanComponent } from './alan/alan.component';
 import { AsusComponent } from './asus/asus.component';
+import { UsersComponent } from './users/users.component';
+
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { AsusComponent } from './asus/asus.component';
     ServerComponent,
     ServersComponent,
     AlanComponent,
-    AsusComponent
+    AsusComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
