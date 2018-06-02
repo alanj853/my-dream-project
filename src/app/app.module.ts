@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import { AlanComponent } from './alan/alan.component';
 import { AsusComponent } from './asus/asus.component';
 import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -19,7 +20,8 @@ import { UsersComponent } from './users/users.component';
     ServersComponent,
     AlanComponent,
     AsusComponent,
-    UsersComponent
+    UsersComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

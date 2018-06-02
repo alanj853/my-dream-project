@@ -1,0 +1,16 @@
+<button
+class="btn btn-primary"
+(click)="toggleP()"
+>
+Display Details
+</button>
+
+<p *ngIf="display">Password = alan</p>
+
+<div 
+*ngFor="let click of buttonClicks"
+[ngStyle]="{backgroundColor: click > 4 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': click > 4}"
+ > 
+    Click {{click}}
+</div>
