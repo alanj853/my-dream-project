@@ -1,5 +1,33 @@
-<h2>Hello World</h2>
-<app-server></app-server>
-<app-server></app-server>
+<h2>Servers</h2>
 
-<div class="app-servers"></div>
+<!-- 
+<input
+type="text"
+class="form-control"
+(input)="onUpdateServerName($event)"> <!-- $event is the data from the (click) event -->
+
+<!-- This is an example of two way binding.  -->
+<input
+type="text"
+class="form-control"
+[(ngModel)]="serverName"
+>
+
+<p>{{serverName}}</p>
+
+<!-- This is an eg of property binding, where [disabled] is property of button bound to allowNewServer 
+
+    Property binding can also be used instead of string interpolation, as with innerText
+-->
+<button
+    [disabled]="!allowNewServer"
+    class="btn btn-primary"
+    (click)="onCreateServer()"> <!-- Event binding example -->
+    Add Server
+</button>
+<p>{{ serverCreationStatus }}</p>
+<!-- <p [innerText]="allowNewServer"></p> -->
+
+ 
+<app-server></app-server>
+<app-server></app-server>

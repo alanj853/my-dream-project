@@ -14,5 +14,10 @@ import { Component } from '@angular/core';
 
 // we export so other modules can use it if they want to {
 export class ServerComponent {
+    serverId: number = 10; // no need to add type for number, it gets it anyways
+    serverStatus: string = 'offline';
 
+    getServerStatus() {
+        return this.serverStatus;
+    }
 }
